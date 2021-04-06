@@ -26,3 +26,6 @@ let e = Enforcer::new(m, adapter).await.unwrap();
 ```
 
 for policy file configuration, please refer to [example](../examples)
+
+
+Do NOT use this in production. Still under development.
