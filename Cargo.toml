@@ -1,0 +1,28 @@
+[package]
+name = "json-adapter"
+version = "0.1.0"
+authors = ["smrpn <samarpan_d@pp.iitr.ac.in>"]
+edition = "2018"
+description = "a adapter which reads yaml format policy file for casbin repo"
+license-file = "LICENSE"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.64"
+async-trait = "0.1.40"
+casbin = {  version = "2.0" }
+tokio = { version = "1.2.0", default-features = false, optional = true }
+async-std = { version = "1.6.4", default-features = false, optional = true }
+
+[dev-dependencies]
+async-std = { version = "1.6.4", features = [ "attributes" ] }
+tokio = { version = "1.2.0", features = [ "full" ] }
+
+[features]
+default = ["runtime-async-std"]
+
+runtime-async-std = ["casbin/runtime-async-std","async-std"]
+runtime-tokio     = ["casbin/runtime-tokio", "tokio/fs", "tokio/io-util"]
