@@ -208,9 +208,8 @@ checksum = "631ae5198c9be5e753e5cc215e1bd73c2b466a3565173db433f52bb9d3e66dba"
 
 [[package]]
 name = "casbin"
-version = "2.0.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a00f7b4d328728e438455da4a54a64c92746412ed02e899fb2e4d3085e553882"
+version = "2.0.7"
+source = "git+https://github.com/casbin/casbin-rs#5ee0e109a2ca4b894a4486f4a1d83f1f2d70d483"
 dependencies = [
  "async-std",
  "async-trait",

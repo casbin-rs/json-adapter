@@ -13,7 +13,7 @@ readme = "README.md"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0.64"
 async-trait = "0.1.40"
-casbin = {  version = "2.0" }
+casbin = { git = "https://github.com/casbin/casbin-rs" }
 tokio = { version = "1.2.0", default-features = false, optional = true }
 async-std = { version = "1.6.4", default-features = false, optional = true }
 
