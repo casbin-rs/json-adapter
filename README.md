@@ -25,6 +25,6 @@ let adapter = JsonAdapter::new("examples/rbac_policy.json");
 let e = Enforcer::new(m, adapter).await.unwrap();
 ```
 
-for policy file configuration, please refer to [example](../examples)
+for policy file configuration, please refer to [example](./examples)
 
 
