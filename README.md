@@ -1,4 +1,4 @@
-# yaml-adapter
+# json-adapter
 
 Json Adapter is a [json](https://github.com/serde-rs/json) adapter for [Casbin-rs](https://github.com/casbin/casbin-rs). With this library, Casbin can load policy from yaml fromat file or save policy into it with fully asynchronous support.
 
@@ -28,4 +28,3 @@ let e = Enforcer::new(m, adapter).await.unwrap();
 for policy file configuration, please refer to [example](../examples)
 
 
-Do NOT use this in production. Still under development.
