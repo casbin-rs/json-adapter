@@ -1,6 +1,6 @@
 # json-adapter
 
-Json Adapter is a [json](https://github.com/serde-rs/json) adapter for [Casbin-rs](https://github.com/casbin/casbin-rs). With this library, Casbin can load policy from yaml fromat file or save policy into it with fully asynchronous support.
+Json Adapter is a [json](https://github.com/serde-rs/json) adapter for [Casbin-rs](https://github.com/casbin/casbin-rs). With this library, Casbin can load policy from json format file or save policy into it with fully asynchronous support.
 
 ## Dependency
 
