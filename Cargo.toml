@@ -3,7 +3,7 @@ name = "json-adapter"
 version = "0.1.0"
 authors = ["smrpn <samarpan_d@pp.iitr.ac.in>"]
 edition = "2018"
-description = "a adapter which reads yaml format policy file for casbin repo"
+description = "a adapter which reads json format policy file for casbin repo"
 license-file = "LICENSE"
 readme = "README.md"
 
@@ -22,7 +22,5 @@ async-std = { version = "1.6.4", features = [ "attributes" ] }
 tokio = { version = "1.2.0", features = [ "full" ] }
 
 [features]
-default = ["runtime-async-std"]
-
-runtime-async-std = ["casbin/runtime-async-std","async-std"]
-runtime-tokio     = ["casbin/runtime-tokio", "tokio/fs", "tokio/io-util"]
+runtime-async-std = ["async-std"]
+runtime-tokio     = ["tokio/fs", "tokio/io-util"]
